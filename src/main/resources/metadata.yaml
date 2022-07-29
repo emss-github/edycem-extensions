@@ -27,3 +27,12 @@ extensions:
         advice: PRE
     priority: 500
     utilities:
+  - name: CUS_xt_OIS100_I_Chk_Pre_CheckWHLO
+    triggers:
+      - type: METHOD
+        program: OIS100
+        programType: INTERACTIVE
+        method: PICHK
+        advice: PRE
+    priority: 500
+    utilities:
