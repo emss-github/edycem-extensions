@@ -221,6 +221,52 @@ apis:
             description: Result
             length: 1
             type: ALPHANUMERIC
+  - name: EXT520MI
+    transactions:
+      - name: DelPayeur
+        description: Deletes a record to the table FEINVS
+        type: SINGLE
+        inputs:
+          - name: CONO
+            description: Company
+            length: 3
+            type: NUMERIC
+            mandatory: true
+          - name: INRC
+            description: Invoice Recipient
+            length: 10
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: PRIO
+            description: Priority
+            length: 1
+            type: NUMERIC
+            mandatory: true
+          - name: OBV1
+            description: Start Value 1
+            length: 15
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: OBV2
+            description: Start Value 2
+            length: 15
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: OBV3
+            description: Start Value 3
+            length: 15
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: FDAT
+            description: From date
+            length: 8
+            type: NUMERIC
+            mandatory: true
+        outputs:
+          - name: RSLT
+            description: Result
+            length: 1
+            type: ALPHANUMERIC
 utilities:
   - name: NumberUtils
   - name: DateUtils
