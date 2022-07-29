@@ -457,6 +457,196 @@ apis:
             description: Timestamp
             length: 18
             type: NUMERIC
+  - name: EXT520MI
+    transactions:
+      - name: LstPayeur
+        description: Lists records from the table FEINVS
+        type: MULTI
+        inputs:
+          - name: CONO
+            description: Company
+            length: 3
+            type: NUMERIC
+            mandatory: true
+          - name: INRC
+            description: Invoice Recipient
+            length: 10
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: PRIO
+            description: Priority
+            length: 1
+            type: NUMERIC
+            mandatory: true
+          - name: OBV1
+            description: Start Value 1
+            length: 15
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: OBV2
+            description: Start Value 2
+            length: 15
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: OBV3
+            description: Start Value 3
+            length: 15
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: FDAT
+            description: From date
+            length: 8
+            type: NUMERIC
+            mandatory: true
+        outputs:
+          - name: CONO
+            description: Company
+            length: 3
+            type: NUMERIC
+          - name: INRC
+            description: Invoice Recipient
+            length: 10
+            type: ALPHANUMERIC
+          - name: PRIO
+            description: Priority
+            length: 1
+            type: NUMERIC
+          - name: OBV1
+            description: Start Value 1
+            length: 15
+            type: ALPHANUMERIC
+          - name: OBV2
+            description: Start Value 2
+            length: 15
+            type: ALPHANUMERIC
+          - name: OBV3
+            description: Start Value 3
+            length: 15
+            type: ALPHANUMERIC
+          - name: FDAT
+            description: From date
+            length: 8
+            type: NUMERIC
+          - name: EPID
+            description: EndpointID
+            length: 40
+            type: ALPHANUMERIC
+          - name: ENDT
+            description: Finish date
+            length: 8
+            type: NUMERIC
+          - name: SCHI
+            description: SchemeID
+            length: 15
+            type: ALPHANUMERIC
+          - name: EPIF
+            description: EndpointID - Field
+            length: 6
+            type: ALPHANUMERIC
+          - name: EPIV
+            description: EndpointID - Value
+            length: 40
+            type: ALPHANUMERIC
+          - name: SENM
+            description: Scheme name
+            length: 2
+            type: NUMERIC
+          - name: EIVF
+            description: E-invoice format
+            length: 40
+            type: ALPHANUMERIC
+          - name: BKID
+            description: Bank account identity
+            length: 5
+            type: ALPHANUMERIC
+          - name: UPD1
+            description: Update values
+            length: 1
+            type: NUMERIC
+          - name: UPD2
+            description: Update values
+            length: 1
+            type: NUMERIC
+          - name: UPD3
+            description: Update values
+            length: 1
+            type: NUMERIC
+          - name: UPD4
+            description: Update values
+            length: 1
+            type: NUMERIC
+          - name: UPD5
+            description: Update values
+            length: 1
+            type: NUMERIC
+          - name: DFN1
+            description: Field name
+            length: 40
+            type: ALPHANUMERIC
+          - name: DFN2
+            description: Field name
+            length: 40
+            type: ALPHANUMERIC
+          - name: DFN3
+            description: Field name
+            length: 40
+            type: ALPHANUMERIC
+          - name: DFN4
+            description: Field name
+            length: 40
+            type: ALPHANUMERIC
+          - name: DFN5
+            description: Field name
+            length: 40
+            type: ALPHANUMERIC
+          - name: DFV1
+            description: Field value
+            length: 200
+            type: ALPHANUMERIC
+          - name: DFV2
+            description: Field value
+            length: 200
+            type: ALPHANUMERIC
+          - name: DFV3
+            description: Field value
+            length: 200
+            type: ALPHANUMERIC
+          - name: DFV4
+            description: Field value
+            length: 200
+            type: ALPHANUMERIC
+          - name: DFV5
+            description: Field value
+            length: 200
+            type: ALPHANUMERIC
+          - name: HPRT
+            description: Hold print on invoice
+            length: 1
+            type: NUMERIC
+          - name: CHNO
+            description: Change no
+            length: 3
+            type: NUMERIC
+          - name: RGDT
+            description: Creation date
+            length: 8
+            type: NUMERIC
+          - name: LMDT
+            description: Change date
+            length: 8
+            type: NUMERIC
+          - name: CHID
+            description: Change ID
+            length: 10
+            type: ALPHANUMERIC
+          - name: RGTM
+            description: Change time
+            length: 6
+            type: NUMERIC
+          - name: LMTS
+            description: Timestamp
+            length: 18
+            type: NUMERIC
 utilities:
   - name: NumberUtils
   - name: DateUtils
