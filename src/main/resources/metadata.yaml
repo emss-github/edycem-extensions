@@ -18,3 +18,12 @@ extensions:
         advice: PRE
     priority: 500
     utilities:
+  - name: CUS_xt_OIS100_E_Chk_Pre_CheckWarehouseCoherence
+    triggers:
+      - type: METHOD
+        program: OIS100
+        programType: INTERACTIVE
+        method: PECHK
+        advice: PRE
+    priority: 500
+    utilities:
