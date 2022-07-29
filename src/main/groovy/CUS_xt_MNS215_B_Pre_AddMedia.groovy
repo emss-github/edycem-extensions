@@ -8,7 +8,7 @@
  * 20220301   Ludovic Travers                Create CUS_xt_MNS215_B_Before extension
  * 20220525   Eric Masson                    Fix post review issues
  */
-public class CUS_xt_MNS215_B_Before extends ExtendM3Trigger {
+public class CUS_xt_MNS215_B_Pre_AddMedia extends ExtendM3Trigger {
 
   private final ProgramAPI program
   private final InteractiveAPI interactive
@@ -16,7 +16,7 @@ public class CUS_xt_MNS215_B_Before extends ExtendM3Trigger {
   private final LoggerAPI logger
   private final MICallerAPI miCaller
 
-  public CUS_xt_MNS215_B_Before(ProgramAPI program, InteractiveAPI interactive, DatabaseAPI database, LoggerAPI logger, MICallerAPI miCaller) {
+  public CUS_xt_MNS215_B_Pre_AddMedia(ProgramAPI program, InteractiveAPI interactive, DatabaseAPI database, LoggerAPI logger, MICallerAPI miCaller) {
     this.program = program
     this.interactive = interactive
     this.database = database
