@@ -9,4 +9,12 @@ extensions:
         advice: PRE
     priority: 500
     utilities:
-
+  - name: CUS_xt_OIS100_A_Chk_Pre_CheckFACI
+    triggers:
+      - type: METHOD
+        program: OIS100
+        programType: INTERACTIVE
+        method: PACHK
+        advice: PRE
+    priority: 500
+    utilities:
