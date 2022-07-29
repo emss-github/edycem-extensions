@@ -647,6 +647,172 @@ apis:
             description: Timestamp
             length: 18
             type: NUMERIC
+  - name: EXT520MI
+    transactions:
+      - name: UpdPayeur
+        description: Updates a record of the table FEINVS
+        type: SINGLE
+        inputs:
+          - name: CONO
+            description: Company
+            length: 3
+            type: NUMERIC
+            mandatory: true
+          - name: INRC
+            description: Invoice Recipient
+            length: 10
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: PRIO
+            description: Priority
+            length: 1
+            type: NUMERIC
+            mandatory: true
+          - name: OBV1
+            description: Start Value 1
+            length: 15
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: OBV2
+            description: Start Value 2
+            length: 15
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: OBV3
+            description: Start Value 3
+            length: 15
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: FDAT
+            description: From date
+            length: 8
+            type: NUMERIC
+            mandatory: true
+          - name: EPID
+            description: EndpointID
+            length: 40
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: ENDT
+            description: Finish date
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: SCHI
+            description: SchemeID
+            length: 15
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: EPIF
+            description: EndpointID - Field
+            length: 6
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: EPIV
+            description: EndpointID - Value
+            length: 40
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: SENM
+            description: Scheme name
+            length: 2
+            type: NUMERIC
+            mandatory: false
+          - name: EIVF
+            description: E-invoice format
+            length: 40
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: BKID
+            description: Bank account identity
+            length: 5
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: UPD1
+            description: Update values
+            length: 1
+            type: NUMERIC
+            mandatory: false
+          - name: UPD2
+            description: Update values
+            length: 1
+            type: NUMERIC
+            mandatory: false
+          - name: UPD3
+            description: Update values
+            length: 1
+            type: NUMERIC
+            mandatory: false
+          - name: UPD4
+            description: Update values
+            length: 1
+            type: NUMERIC
+            mandatory: false
+          - name: UPD5
+            description: Update values
+            length: 1
+            type: NUMERIC
+            mandatory: false
+          - name: DFN1
+            description: Field name
+            length: 40
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: DFN2
+            description: Field name
+            length: 40
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: DFN3
+            description: Field name
+            length: 40
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: DFN4
+            description: Field name
+            length: 40
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: DFN5
+            description: Field name
+            length: 40
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: DFV1
+            description: Field value
+            length: 200
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: DFV2
+            description: Field value
+            length: 200
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: DFV3
+            description: Field value
+            length: 200
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: DFV4
+            description: Field value
+            length: 200
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: DFV5
+            description: Field value
+            length: 200
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: HPRT
+            description: Hold print on invoice
+            length: 1
+            type: NUMERIC
+            mandatory: false
+        outputs:
+          - name: RSLT
+            description: Result
+            length: 1
+            type: ALPHANUMERIC
 utilities:
   - name: NumberUtils
   - name: DateUtils
