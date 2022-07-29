@@ -45,3 +45,12 @@ extensions:
         advice: PRE
     priority: 500
     utilities:
+  - name: CUS_xt_PPS201_B_Chk_Pre_CheckWarehouseCoherence
+    triggers:
+      - type: METHOD
+        program: PPS201
+        programType: INTERACTIVE
+        method: PBCHK
+        advice: PRE
+    priority: 500
+    utilities:
