@@ -36,3 +36,12 @@ extensions:
         advice: PRE
     priority: 500
     utilities:
+  - name: CUS_xt_OIS101_B_Chk_Pre_CheckWHLOLine
+    triggers:
+      - type: METHOD
+        program: OIS101
+        programType: INTERACTIVE
+        method: PBCHK
+        advice: PRE
+    priority: 500
+    utilities:
