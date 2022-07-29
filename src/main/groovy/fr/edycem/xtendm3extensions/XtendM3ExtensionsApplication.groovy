@@ -1,4 +1,4 @@
-package com.acmecorp.xtendm3extensions
+package fr.edycem.xtendm3extensions
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
