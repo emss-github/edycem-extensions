@@ -1,6 +1,6 @@
 metadataVersion: 1
 extensions:
-  - name: CUS_xt_MNS215_B_Before
+  - name: CUS_xt_MNS215_B_Pre_AddMedia
     triggers:
       - type: METHOD
         program: MNS215
