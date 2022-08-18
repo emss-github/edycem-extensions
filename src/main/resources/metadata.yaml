@@ -54,6 +54,258 @@ extensions:
         advice: PRE
     priority: 500
     utilities:
+tables:
+  - name: EXTCGE
+    indexes: 
+      - name: 00
+      unique: true
+      keys: 
+        - name: EXCONO
+        ascending: true
+        - name: EXFILE
+        ascending: true
+        - name: EXPK01
+        ascending: true
+        - name: EXPK02
+        ascending: true
+        - name: EXPK03
+        ascending: true
+        - name: EXPK04
+        ascending: true
+        - name: EXPK05
+        ascending: true
+        - name: EXPK06
+        ascending: true
+        - name: EXPK07
+        ascending: true
+        - name: EXPK08
+        ascending: true
+      - name: 10
+      unique: false
+      keys: 
+        - name: EXCONO
+        ascending: true
+        - name: EXFILE
+        ascending: true
+        - name: EXPK02
+        ascending: true
+        - name: EXPK01
+        ascending: true
+        - name: EXPK03
+        ascending: true
+        - name: EXPK04
+        ascending: true
+        - name: EXPK05
+        ascending: true
+        - name: EXPK06
+        ascending: true
+        - name: EXPK07
+        ascending: true
+        - name: EXPK08
+        ascending: true
+      - name: 20
+      unique: false
+      keys: 
+        - name: EXCONO
+        ascending: true
+        - name: EXFILE
+        ascending: true
+        - name: EXPK03
+        ascending: true
+        - name: EXPK01
+        ascending: true
+        - name: EXPK02
+        ascending: true
+        - name: EXPK04
+        ascending: true
+        - name: EXPK05
+        ascending: true
+        - name: EXPK06
+        ascending: true
+        - name: EXPK07
+        ascending: true
+        - name: EXPK08
+        ascending: true
+      - name: 30
+      unique: false
+      keys: 
+        - name: EXCONO
+        ascending: true
+        - name: EXFILE
+        ascending: true
+        - name: EXPK04
+        ascending: true
+        - name: EXPK01
+        ascending: true
+        - name: EXPK02
+        ascending: true
+        - name: EXPK03
+        ascending: true
+        - name: EXPK05
+        ascending: true
+        - name: EXPK06
+        ascending: true
+        - name: EXPK07
+        ascending: true
+        - name: EXPK08
+        ascending: true
+    fields:
+      - name: EXCONO
+      length: 3
+      type: NUMERIC
+      - name: EXFILE
+      length: 10
+      type: ALPHANUMERIC
+      - name: EXPK01
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXPK02
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXPK03
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXPK04
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXPK05
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXPK06
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXPK07
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXPK08
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXA030
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXA130
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXA230
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXA330
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXA430
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXA530
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXA630
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXA730
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXA830
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXA930
+      length: 30
+      type: ALPHANUMERIC
+      - name: EXN096
+      length: 18
+      type: NUMERIC
+      - name: EXN196
+      length: 18
+      type: NUMERIC
+      - name: EXN296
+      length: 18
+      type: NUMERIC
+      - name: EXN396
+      length: 18
+      type: NUMERIC
+      - name: EXN496
+      length: 18
+      type: NUMERIC
+      - name: EXN596
+      length: 18
+      type: NUMERIC
+      - name: EXN696
+      length: 18
+      type: NUMERIC
+      - name: EXN796
+      length: 18
+      type: NUMERIC
+      - name: EXN896
+      length: 18
+      type: NUMERIC
+      - name: EXN996
+      length: 18
+      type: NUMERIC
+      - name: EXN996
+      length: 18
+      type: NUMERIC
+      - name: EXA256
+      length: 256
+      type: ALPHANUMERIC
+      - name: EXA121
+      length: 120
+      type: ALPHANUMERIC
+      - name: EXA122
+      length: 120
+      type: ALPHANUMERIC
+      - name: EXLMTS
+      length: 18
+      type: NUMERIC
+      - name: EXRGDT
+      length: 8
+      type: NUMERIC
+      - name: EXRGTM
+      length: 6
+      type: NUMERIC
+      - name: EXLMDT
+      length: 8
+      type: NUMERIC
+      - name: EXCHNO
+      length: 3
+      type: NUMERIC
+      - name: EXCHID
+      length: 10
+      type: ALPHANUMERIC
+      - name: EXLMTS
+      length: 18
+      type: NUMERIC
+      - name: EXCHB1
+      length: 1
+      type: NUMERIC
+      - name: EXCHB2
+      length: 1
+      type: NUMERIC
+      - name: EXCHB3
+      length: 1
+      type: NUMERIC
+      - name: EXCHB4
+      length: 1
+      type: NUMERIC
+      - name: EXDAT1
+      length: 8
+      type: NUMERIC
+      - name: EXDAT2
+      length: 8
+      type: NUMERIC
+      - name: EXDAT3
+      length: 8
+      type: NUMERIC
+      - name: EXDAT4
+      length: 8
+      type: NUMERIC
+      - name: EXDAT5
+      length: 8
+      type: NUMERIC
+      - name: EXDAT6
+      length: 8
+      type: NUMERIC
+      - name: EXDAT7
+      length: 8
+      type: NUMERIC
 apis:
   - name: EXT520MI
     transactions:
@@ -813,6 +1065,1141 @@ apis:
             description: Result
             length: 1
             type: ALPHANUMERIC
+  - name: EXT600MI
+    transactions:
+      - name: AddFieldValue
+        description: Adds a record to the table EXTCGE
+        type: SINGLE
+        inputs:
+          - name: FILE
+            description: Table
+            length: 10
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: PK01
+            description: Primary Key 1
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK02
+            description: Primary Key 2
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK03
+            description: Primary Key 3
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK04
+            description: Primary Key 4
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK05
+            description: Primary Key 5
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK06
+            description: Primary Key 6
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK07
+            description: Primary Key 7
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK08
+            description: Primary Key 8
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A030
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A130
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A230
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A330
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A430
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A530
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A630
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A730
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A830
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A930
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: N096
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N196
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N296
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N396
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N496
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N596
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N696
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N796
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N896
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N996
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: A121
+            description: Alphanumeric field 120 positions
+            length: 120
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A122
+            description: Alphanumeric field 120 positions
+            length: 120
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A256
+            description: Alphanumeric field 256 positions
+            length: 256
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: CHB1
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+            mandatory: false
+          - name: CHB2
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+            mandatory: false
+          - name: CHB3
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+            mandatory: false
+          - name: CHB4
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+            mandatory: false
+          - name: DAT1
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: DAT2
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: DAT3
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: DAT4
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: DAT5
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: DAT6
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: DAT7
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: CHNO
+            description: 
+            length: 3
+            type: NUMERIC
+            mandatory: false
+          - name: RGDT
+            description: 
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: LMDT
+            description:
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: CHID
+            description:
+            length: 10
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: RGTM
+            description:
+            length: 6
+            type: NUMERIC
+            mandatory: false
+          - name: LMTS
+            description: 
+            length: 18
+            type: NUMERIC
+            mandatory: false
+        outputs:
+          - name: RSLT
+            description: Result
+            length: 1
+            type: ALPHANUMERIC
+  - name: EXT600MI
+    transactions:
+      - name: ChgFieldValue
+        description: Changes a record of the table EXTCGE
+        type: SINGLE
+        inputs:
+          - name: FILE
+            description: Table
+            length: 10
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: PK01
+            description: Primary Key 1
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK02
+            description: Primary Key 2
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK03
+            description: Primary Key 3
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK04
+            description: Primary Key 4
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK05
+            description: Primary Key 5
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK06
+            description: Primary Key 6
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK07
+            description: Primary Key 7
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK08
+            description: Primary Key 8
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A030
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A130
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A230
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A330
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A430
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A530
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A630
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A730
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A830
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A930
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: N096
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N196
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N296
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N396
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N496
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N596
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N696
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N796
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N896
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: N996
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+            mandatory: false
+          - name: A121
+            description: Alphanumeric field 120 positions
+            length: 120
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A122
+            description: Alphanumeric field 120 positions
+            length: 120
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: A256
+            description: Alphanumeric field 256 positions
+            length: 256
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: CHB1
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+            mandatory: false
+          - name: CHB2
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+            mandatory: false
+          - name: CHB3
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+            mandatory: false
+          - name: CHB4
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+            mandatory: false
+          - name: DAT1
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: DAT2
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: DAT3
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: DAT4
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: DAT5
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: DAT6
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+            mandatory: false
+          - name: DAT7
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+            mandatory: false
+        outputs:
+          - name: RSLT
+            description: Result
+            length: 1
+            type: ALPHANUMERIC
+  - name: EXT600MI
+    transactions:
+      - name: CpyFieldValue
+        description: Copies a record in the table EXTCGE
+        type: SINGLE
+        inputs:
+          - name: FILE
+            description: Table
+            length: 10
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: PK01
+            description: Primary Key 1
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK02
+            description: Primary Key 2
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK03
+            description: Primary Key 3
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK04
+            description: Primary Key 4
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK05
+            description: Primary Key 5
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK06
+            description: Primary Key 6
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK07
+            description: Primary Key 7
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK08
+            description: Primary Key 8
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: TFIL
+            description: To Table
+            length: 10
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: PKT1
+            description: To Primary Key 1
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PKT2
+            description: To Primary Key 2
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PKT3
+            description: To Primary Key 3
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PKT4
+            description: To Primary Key 4
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PKT5
+            description: To Primary Key 5
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PKT6
+            description: To Primary Key 6
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PKT7
+            description: To Primary Key 7
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PKT8
+            description: To Primary Key 8
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+        outputs:
+          - name: RSLT
+            description: Result
+            length: 1
+            type: ALPHANUMERIC
+  - name: EXT600MI
+    transactions:
+      - name: DelFieldValue
+        description: Deletes a record of the table EXTCGE
+        type: SINGLE
+        inputs:
+          - name: FILE
+            description: Table
+            length: 10
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: PK01
+            description: Primary Key 1
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK02
+            description: Primary Key 2
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK03
+            description: Primary Key 3
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK04
+            description: Primary Key 4
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK05
+            description: Primary Key 5
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK06
+            description: Primary Key 6
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK07
+            description: Primary Key 7
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK08
+            description: Primary Key 8
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+        outputs:
+          - name: RSLT
+            description: Result
+            length: 1
+            type: ALPHANUMERIC
+  - name: EXT600MI
+    transactions:
+      - name: GetFieldValue
+        description: Gets a record to the table EXTCGE
+        type: SINGLE
+        inputs:
+          - name: FILE
+            description: Table
+            length: 10
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: PK01
+            description: Primary Key 1
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK02
+            description: Primary Key 2
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK03
+            description: Primary Key 3
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK04
+            description: Primary Key 4
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK05
+            description: Primary Key 5
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK06
+            description: Primary Key 6
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK07
+            description: Primary Key 7
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK08
+            description: Primary Key 8
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+        outputs:
+          - name: FILE
+            description: Table
+            length: 10
+            type: ALPHANUMERIC
+          - name: PK01
+            description: Primary Key 1
+            length: 30
+            type: ALPHANUMERIC
+          - name: PK02
+            description: Primary Key 2
+            length: 30
+            type: ALPHANUMERIC
+          - name: PK03
+            description: Primary Key 3
+            length: 30
+            type: ALPHANUMERIC
+          - name: PK04
+            description: Primary Key 4
+            length: 30
+            type: ALPHANUMERIC
+          - name: PK05
+            description: Primary Key 5
+            length: 30
+            type: ALPHANUMERIC
+          - name: PK06
+            description: Primary Key 6
+            length: 30
+            type: ALPHANUMERIC
+          - name: PK07
+            description: Primary Key 7
+            length: 30
+            type: ALPHANUMERIC
+          - name: PK08
+            description: Primary Key 8
+            length: 30
+            type: ALPHANUMERIC
+          - name: A030
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A130
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A230
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A330
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A430
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A530
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A630
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A730
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A830
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A930
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: N096
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N196
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N296
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N396
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N496
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N596
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N696
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N796
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N896
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N996
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: A121
+            description: Alphanumeric field 120 positions
+            length: 120
+            type: ALPHANUMERIC
+          - name: A122
+            description: Alphanumeric field 120 positions
+            length: 120
+            type: ALPHANUMERIC
+          - name: A256
+            description: Alphanumeric field 256 positions
+            length: 256
+            type: ALPHANUMERIC
+          - name: CHB1
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+          - name: CHB2
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+          - name: CHB3
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+          - name: CHB4
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+          - name: DAT1
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+          - name: DAT2
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+          - name: DAT3
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+          - name: DAT4
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+          - name: DAT5
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+          - name: DAT6
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+          - name: DAT7
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+          - name: CHNO
+            description: 
+            length: 3
+            type: NUMERIC
+          - name: RGDT
+            description: 
+            length: 8
+            type: NUMERIC
+          - name: LMDT
+            description:
+            length: 8
+            type: NUMERIC
+          - name: CHID
+            description:
+            length: 10
+            type: ALPHANUMERIC
+          - name: RGTM
+            description:
+            length: 6
+            type: NUMERIC
+          - name: LMTS
+            description: 
+            length: 18
+            type: NUMERIC
+  - name: EXT600MI
+    transactions:
+      - name: LstFieldValue
+        description: Lists records from the table EXTCGE
+        type: MULTI
+        inputs:
+          - name: FILE
+            description: Table
+            length: 10
+            type: ALPHANUMERIC
+            mandatory: true
+          - name: PK01
+            description: Primary Key 1
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK02
+            description: Primary Key 2
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK03
+            description: Primary Key 3
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK04
+            description: Primary Key 4
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK05
+            description: Primary Key 5
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK06
+            description: Primary Key 6
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK07
+            description: Primary Key 7
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+          - name: PK08
+            description: Primary Key 8
+            length: 30
+            type: ALPHANUMERIC
+            mandatory: false
+        outputs:
+          - name: FILE
+            description: Table
+            length: 10
+            type: ALPHANUMERIC
+          - name: PK01
+            description: Primary Key 1
+            length: 30
+            type: ALPHANUMERIC
+          - name: PK02
+            description: Primary Key 2
+            length: 30
+            type: ALPHANUMERIC
+          - name: PK03
+            description: Primary Key 3
+            length: 30
+            type: ALPHANUMERIC
+          - name: PK04
+            description: Primary Key 4
+            length: 30
+            type: ALPHANUMERIC
+          - name: PK05
+            description: Primary Key 5
+            length: 30
+            type: ALPHANUMERIC
+          - name: PK06
+            description: Primary Key 6
+            length: 30
+            type: ALPHANUMERIC
+          - name: PK07
+            description: Primary Key 7
+            length: 30
+            type: ALPHANUMERIC
+          - name: PK08
+            description: Primary Key 8
+            length: 30
+            type: ALPHANUMERIC
+          - name: A030
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A130
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A230
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A330
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A430
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A530
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A630
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A730
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A830
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: A930
+            description: Alpha field 30 positions
+            length: 30
+            type: ALPHANUMERIC
+          - name: N096
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N196
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N296
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N396
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N496
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N596
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N696
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N796
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N896
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: N996
+            description: Numeric field 18,6 positions
+            length: 21
+            type: NUMERIC
+          - name: A121
+            description: Alphanumeric field 120 positions
+            length: 120
+            type: ALPHANUMERIC
+          - name: A122
+            description: Alphanumeric field 120 positions
+            length: 120
+            type: ALPHANUMERIC
+          - name: A256
+            description: Alphanumeric field 256 positions
+            length: 256
+            type: ALPHANUMERIC
+          - name: CHB1
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+          - name: CHB2
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+          - name: CHB3
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+          - name: CHB4
+            description: Yes/no
+            length: 1
+            type: NUMERIC
+          - name: DAT1
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+          - name: DAT2
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+          - name: DAT3
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+          - name: DAT4
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+          - name: DAT5
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+          - name: DAT6
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+          - name: DAT7
+            description: Ref field for date
+            length: 8
+            type: NUMERIC
+          - name: CHNO
+            description: 
+            length: 3
+            type: NUMERIC
+          - name: RGDT
+            description: 
+            length: 8
+            type: NUMERIC
+          - name: LMDT
+            description:
+            length: 8
+            type: NUMERIC
+          - name: CHID
+            description:
+            length: 10
+            type: ALPHANUMERIC
+          - name: RGTM
+            description:
+            length: 6
+            type: NUMERIC
+          - name: LMTS
+            description: 
+            length: 18
+            type: NUMERIC
 utilities:
   - name: NumberUtils
   - name: DateUtils
